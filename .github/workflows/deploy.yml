@@ -1,0 +1,42 @@
+name: Deploy academic homepage
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare static site
+        run: |
+          mkdir -p dist/figures dist/public/papers
+          cp index.html styles.css dist/
+          cp public/favicon.svg dist/public/
+          cp figures/036e1a4b024d4f23b9a19026ae9fa17a.jpg dist/figures/
+          cp public/papers/stable-matching-probabilistic-preferences.pdf dist/public/papers/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
