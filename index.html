@@ -19,6 +19,7 @@
           <a href="#about">About</a>
           <a href="#research">Research</a>
           <a href="#recognition">Recognition</a>
+          <a href="#life">Life</a>
           <a href="#contact">Contact</a>
         </nav>
         <a class="header-github" href="https://github.com/lsy999999999" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
@@ -27,14 +28,23 @@
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-name">
-        <img class="hero-photo" src="figures/036e1a4b024d4f23b9a19026ae9fa17a.jpg" alt="Shiyu Liu at the Forbidden City in Beijing" width="1086" height="724" fetchpriority="high">
+        <img class="hero-photo" id="hero-photo" src="figures/036e1a4b024d4f23b9a19026ae9fa17a.jpg" alt="Shiyu Liu at the Forbidden City in Beijing" width="1086" height="724" fetchpriority="high">
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="wrap hero-content">
           <div class="hero-intro">
             <p class="eyebrow">Renmin University of China <span aria-hidden="true">/</span> Beijing</p>
             <h1 id="hero-name">Shiyu Liu</h1>
-            <p class="hero-introduction">I study large language models and decision-making under uncertainty, with the goal of pursuing doctoral research in computer science.</p>
+            <p class="hero-introduction">I study large language models and decision-making under uncertainty. I hope to pursue a PhD in computer science in the United States.</p>
           </div>
+        </div>
+      </section>
+
+      <section class="contact-strip" id="contact" aria-label="Contact Shiyu Liu">
+        <div class="wrap contact-strip-inner">
+          <a class="contact-primary" href="mailto:liushiyu9@ruc.edu.cn"><span>Email</span><strong>liushiyu9@ruc.edu.cn</strong><span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/lsy999999999" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.xiaohongshu.com/user/profile/66d08757000000001d03140d" target="_blank" rel="noopener noreferrer">rednote <span aria-hidden="true">↗</span></a>
+          <span class="cv-reserved"><strong>CV</strong><span>Available soon</span></span>
         </div>
       </section>
 
@@ -107,14 +117,15 @@
             <h2 id="recognition-title">Selected honors</h2>
           </div>
           <ul class="honors-list">
-            <li><strong>CCF Undergraduate “Qihang” Program</strong><p>One of 100 students selected across China; served as the program's 2026 undergraduate representative.</p></li>
+            <li><strong>CCF Undergraduate “Qihang” Program</strong><p>One of <a href="https://www.ccf.org.cn/Awards/Awards/2026-07-31/919353.shtml" target="_blank" rel="noopener noreferrer">103 students selected nationwide in China in 2026</a>; served as the undergraduate representative for the cohort.</p></li>
             <li><strong>Beijing Municipal Natural Science Foundation · Undergraduate “Qiyan” Research Program</strong><p>Independent project lead in the foundation's undergraduate research program.</p></li>
-            <li><strong>National Undergraduate Innovation Training Program</strong><p>Led a national-level undergraduate innovation training project.</p></li>
-            <li><strong>National-level “Qiushi Academic” Project</strong><p>Served as project lead for a national-level academic initiative.</p></li>
+            <li><strong>National Undergraduate Innovation Training Program · “Qiushi Academic”</strong><p>Led a nationally funded undergraduate research training project.</p></li>
+            <li><strong>National Undergraduate Entrepreneurship Training Program</strong><p>Led a national-level student entrepreneurship training project.</p></li>
             <li><strong>Mathematical Contest in Modeling</strong><p>Received the Meritorious Winner distinction (M Award).</p></li>
             <li><strong>Chinese Mathematics Competition for College Students</strong><p>Received Third Prize in the national mathematics competition.</p></li>
             <li><strong>National Outstanding Student Honor</strong><p>Received national-level recognition for overall student achievement.</p></li>
             <li><strong>Third-Class Academic Scholarship</strong><p>Received a scholarship for academic achievement.</p></li>
+            <li><strong>High school science and mathematics competitions</strong><p>Second Prize in Chongqing physics, biology, and chemistry competitions, and Second Prize in a mathematics olympiad competition.</p></li>
           </ul>
         </div>
       </section>
@@ -146,14 +157,36 @@
         </div>
       </section>
 
-      <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="wrap contact-inner">
-          <div><p class="section-kicker">05 / Contact</p><h2 id="contact-title">Let’s talk research.</h2><p>For research questions and academic collaboration, reach me by email.</p></div>
-          <div class="contact-actions"><a href="mailto:liushiyu9@ruc.edu.cn">liushiyu9@ruc.edu.cn <span aria-hidden="true">↗</span></a><a href="https://github.com/lsy999999999" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+      <section class="section life-section" id="life" aria-labelledby="life-title">
+        <div class="wrap">
+          <div class="section-top">
+            <p class="section-kicker">05 / Life</p>
+            <h2 id="life-title">Away from the desk</h2>
+          </div>
+          <div class="life-showcase" aria-label="Photographs from my life">
+            <div class="life-story" aria-live="polite">
+              <p class="life-category" id="life-category">Sport</p>
+              <h3 id="life-photo-title">Always up for a game</h3>
+              <p class="life-description" id="life-description">I like trying all kinds of sports, from softball to running and swimming. Training and playing with friends keep me energized beyond research.</p>
+              <div class="life-controls">
+                <button type="button" id="life-prev" aria-label="Previous life photo" title="Previous photo">&#8592;</button>
+                <span id="life-count">01 / 05</span>
+                <button type="button" id="life-next" aria-label="Next life photo" title="Next photo">&#8594;</button>
+              </div>
+            </div>
+            <div class="life-stack">
+              <img class="life-back life-back-two" id="life-back-two" src="figures/life-stage.jpg" alt="" aria-hidden="true" loading="lazy">
+              <img class="life-back life-back-one" id="life-back-one" src="figures/life-dessert.jpg" alt="" aria-hidden="true" loading="lazy">
+              <button class="life-image-button" type="button" id="life-image-next" aria-label="Show next life photo" title="Next photo">
+                <img id="life-photo" src="figures/life-track.jpg" alt="Shiyu holding a softball glove on the field" loading="lazy" width="768" height="1024">
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer"><div class="wrap"><span>© 2026 Shiyu Liu</span><span>Renmin University of China</span><a href="#top">Back to top ↑</a></div></footer>
+    <script src="site.js" defer></script>
   </body>
 </html>

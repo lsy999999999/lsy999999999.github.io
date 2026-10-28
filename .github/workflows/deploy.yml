@@ -22,9 +22,12 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p dist/figures dist/public/papers
-          cp index.html styles.css dist/
+          cp index.html styles.css site.js dist/
           cp public/favicon.svg dist/public/
           cp figures/036e1a4b024d4f23b9a19026ae9fa17a.jpg dist/figures/
+          cp figures/1685149e0993f2601ffacf109d147ec3.jpg dist/figures/
+          cp figures/ec34fef996ddf7fbed55c488313669ac.jpg dist/figures/
+          cp figures/life-track.jpg figures/life-dessert.jpg figures/life-stage.jpg dist/figures/
           cp public/papers/stable-matching-probabilistic-preferences.pdf dist/public/papers/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4

@@ -18,6 +18,11 @@ package.json
 tsconfig.json
 figures/*
 !figures/036e1a4b024d4f23b9a19026ae9fa17a.jpg
+!figures/1685149e0993f2601ffacf109d147ec3.jpg
+!figures/ec34fef996ddf7fbed55c488313669ac.jpg
+!figures/life-track.jpg
+!figures/life-dessert.jpg
+!figures/life-stage.jpg
 public/images/
 public/scripts/
 public/og-image.svg

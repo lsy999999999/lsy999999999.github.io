@@ -1,16 +1,17 @@
 # Shiyu Liu | Academic Homepage
 
-这是一个可直接打开的英文个人学术主页。页面依次展示个人简介、论文、荣誉、学术活动和联系方式。
+这是一个可直接打开的英文个人学术主页。页面依次展示个人简介、论文、荣誉、学术活动和生活照片；联系方式位于首页照片下方。
 
 ## 本地打开
 
-双击项目根目录的 `index.html`，或在浏览器中打开它。页面是纯静态 HTML/CSS，不需要安装 Node.js、npm 或启动服务器。照片和论文 PDF 使用项目内的相对路径，离线也能打开。
+双击项目根目录的 `index.html`，或在浏览器中打开它。页面是纯静态 HTML/CSS/JavaScript，不需要安装 Node.js、npm 或启动服务器。照片和论文 PDF 使用项目内的相对路径，离线也能打开。
 
 ## 修改内容
 
 - `index.html`：网页内容与链接
 - `styles.css`：桌面和手机布局
-- `figures/036e1a4b024d4f23b9a19026ae9fa17a.jpg`：首页照片
+- `site.js`：生活照片与文字的手动切换
+- `figures/`：个人照片与生活照片
 - `public/papers/stable-matching-probabilistic-preferences.pdf`：论文 PDF
 - `.github/workflows/deploy.yml`：GitHub Pages 自动发布
 
