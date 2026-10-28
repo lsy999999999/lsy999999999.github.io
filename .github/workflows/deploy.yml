@@ -23,6 +23,7 @@ jobs:
         run: |
           mkdir -p dist/figures dist/public/papers
           cp index.html styles.css site.js dist/
+          cp Shiyu_Liu_Academic_CV_v5.pdf dist/
           cp public/favicon.svg dist/public/
           cp figures/036e1a4b024d4f23b9a19026ae9fa17a.jpg dist/figures/
           cp figures/1685149e0993f2601ffacf109d147ec3.jpg dist/figures/
