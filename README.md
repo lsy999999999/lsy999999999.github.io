@@ -4,7 +4,7 @@
 
 ## 本地打开
 
-双击项目根目录的 `index.html`，或在浏览器中打开它。页面是纯静态 HTML/CSS/JavaScript，不需要安装 Node.js、npm 或启动服务器。照片和论文 PDF 使用项目内的相对路径，离线也能打开。
+双击项目根目录的 `index.html`，或在浏览器中打开它。页面是纯静态 HTML/CSS/JavaScript，不需要安装 Node.js、npm 或启动服务器。照片、CV 和论文 PDF 使用项目内的相对路径，离线也能打开。
 
 ## 修改内容
 
@@ -12,6 +12,7 @@
 - `styles.css`：桌面和手机布局
 - `site.js`：生活照片与文字的手动切换
 - `figures/`：个人照片与生活照片
+- `Shiyu_Liu_Academic_CV_v5.pdf`：个人 CV
 - `public/papers/stable-matching-probabilistic-preferences.pdf`：论文 PDF
 - `.github/workflows/deploy.yml`：GitHub Pages 自动发布
 
@@ -19,7 +20,7 @@
 
 ## 发布到 GitHub Pages
 
-将项目推送到 `lsy999999999/lsy999999999.github.io` 仓库的 `main` 分支，然后在仓库的 **Settings → Pages → Build and deployment** 中选择 **GitHub Actions**。工作流会自动发布 `index.html`、样式、照片和论文，完成后网址为 `https://lsy999999999.github.io/`。
+将项目推送到 `lsy999999999/lsy999999999.github.io` 仓库的 `main` 分支，然后在仓库的 **Settings → Pages → Build and deployment** 中选择 **GitHub Actions**。工作流会自动发布 `index.html`、样式、照片、CV 和论文，完成后网址为 `https://lsy999999999.github.io/`。
 
 若使用其他仓库名，GitHub Pages 网址会包含仓库路径。页面资源都是相对路径，同样可以打开。
 
