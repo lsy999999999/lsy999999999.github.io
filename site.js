@@ -43,9 +43,32 @@
       category: 'Travel',
       title: 'Out exploring',
       description: 'I like going somewhere new, spending time outdoors, and collecting the small moments that make a trip memorable.'
+    },
+    {
+      image: 'figures/春游.jpg',
+      alt: 'Shiyu smiling among yellow spring flowers',
+      category: 'Spring',
+      title: 'Spring outing',
+      description: 'An afternoon among bright spring blossoms.'
+    },
+    {
+      image: 'figures/秋游.jpg',
+      alt: 'Shiyu by the water on an autumn evening',
+      category: 'Autumn',
+      title: 'Autumn outing',
+      description: 'An evening walk by the water as the city lights came on.'
     }
   ];
   let index = 0;
+  const preloadedImages = [];
+
+  window.addEventListener('load', () => {
+    for (const story of stories) {
+      const image = new Image();
+      image.src = story.image;
+      preloadedImages.push(image);
+    }
+  }, { once: true });
 
   function showStory(next) {
     index = (next + stories.length) % stories.length;

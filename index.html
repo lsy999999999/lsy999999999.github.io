@@ -34,7 +34,7 @@
           <div class="hero-intro">
             <p class="eyebrow">Renmin University of China <span aria-hidden="true">/</span> Beijing</p>
             <h1 id="hero-name">Shiyu Liu</h1>
-            <p class="hero-introduction">I study large language models and decision-making under uncertainty. I hope to pursue a PhD in computer science outside mainland China.</p>
+            <p class="hero-introduction">My work spans efficient AI systems and decision-making under uncertainty. I want to help more people explore their ideas.</p>
           </div>
         </div>
       </section>
@@ -54,17 +54,29 @@
             <p class="section-kicker">01 / About</p>
             <h2 id="about-title">How I approach research</h2>
             <div class="about-copy">
-              <p>I am Shiyu Liu, a third-year undergraduate at the School of Information, Renmin University of China, pursuing dual degrees in Finance and Data Science &amp; Big Data Technology. My research centers on large language models and how they represent preferences, interact with incentives, and make decisions under uncertainty.</p>
-              <p>Our ACL 2026 paper studies stable matching under probabilistic preferences. It brings together LLM-based preference modeling and algorithmic game theory, and has led me to broader questions about LLM agents: how to evaluate their behavior, make their decisions more reliable, and understand their role in interactive systems.</p>
-              <p>I hope to pursue a PhD in computer science outside mainland China. I want to combine clear theoretical questions with careful experiments and develop methods that make LLM-based decision systems more dependable in practice.</p>
+              <p>I am an undergraduate at Renmin University of China pursuing dual degrees in Finance and Data Science &amp; Big Data Technology. I came to research because I wanted to understand how new ideas are discovered and whether I could turn some of my own into something useful.</p>
+              <p>My work has taken me from repeated auctions and uncertain preferences to LLM serving. What connects these projects is my interest in questions that change when a familiar model meets real constraints. I enjoy following unexpected results, reconsidering my assumptions, and building tools that let me test a better idea.</p>
             </div>
+            <details class="about-more">
+              <summary>Read the full story</summary>
+              <div class="about-copy about-full-story">
+                <p>For as long as I can remember, I have had more ideas than I could pursue on my own. I wondered whether a machine could take on work I did not enjoy and leave more time to explore and create. When GPT-4o appeared, that old curiosity became a concrete question: how could a model produce an answer that seemed to make sense? I began studying computer science independently through CS50, CS61B, CSAPP, and Advanced Natural Language Processing. The more I learned, the more I wanted to understand how ideas beyond a course syllabus were discovered in the first place.</p>
+                <p>I entered research through algorithmic game theory, close to my training in finance and data science. In repeated auctions, I saw that a mechanism that looks straightforward in one round becomes a different problem when winning today changes a bidder's opportunities tomorrow. Moving between theoretical discussion and experimental implementation taught me to look closely at the assumptions behind a model.</p>
+                <p>In our stable-matching project, an early result did not support what we expected from the algorithm. I went back to the evaluation and realized that our satisfaction measure could not tell us whether a matching was stable: two people might like their current partners and still prefer to leave for each other. That question helped lead us to Expected Blocking Pairs, a way to evaluate instability when decisions are probabilistic. I found that the most useful response to a surprising result was sometimes to change the question we were measuring.</p>
+                <p>SPARE began with an everyday frustration: online LLM responses could be slow when many requests competed for limited GPU resources. I first tried learning scheduling decisions with reinforcement learning, but delayed feedback, expensive GPU runs, and changing workloads made that approach difficult to rely on. I returned to earlier experiments, traced how unfinished prefills used computation and physical KV-cache blocks, and developed a more direct scheduling method. When GPU experiments became a bottleneck, I built a calibrated simulator that could test different models, policies, and resource settings. The project taught me to keep working through a difficult problem while remaining willing to change my method.</p>
+                <p>I want my work to be useful beyond a paper. I hope to pursue a PhD in computer science, study efficient and adaptive AI systems, and explore how AI can help people in economics, finance, and other sciences investigate questions they could not easily study before. I value the chance to learn unfamiliar ideas, meet people with different perspectives, and create something that others can build on, even when the outcome is uncertain.</p>
+              </div>
+            </details>
             <a class="text-link" href="mailto:liushiyu9@ruc.edu.cn">Get in touch <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="focus-list" aria-label="Research interests">
-            <div><span>01</span><strong>Large language models</strong><p>Preference modeling and reasoning</p></div>
-            <div><span>02</span><strong>LLM agents</strong><p>Decisions and interaction under uncertainty</p></div>
-            <div><span>03</span><strong>Algorithmic game theory</strong><p>Matching markets, mechanisms, and incentives</p></div>
-            <div><span>04</span><strong>Computational social science</strong><p>Human behavior and institutions</p></div>
+          <div class="research-directions" aria-labelledby="directions-title">
+            <h3 id="directions-title">Research directions</h3>
+            <div class="focus-list">
+              <div><span>01</span><strong>Machine Learning</strong><p>Learning methods for uncertain decisions and real-world problems.</p></div>
+              <div><span>02</span><strong>Large Language Models &amp; LLM Systems</strong><p>Efficient serving, scheduling, and resource use.</p></div>
+              <div><span>03</span><strong>Algorithmic Game Theory &amp; Mechanism Design</strong><p>Matching, auctions, preferences, and incentives.</p></div>
+              <div><span>04</span><strong>Online Decision-Making &amp; Optimization</strong><p>Adaptive choices under changing workloads and constraints.</p></div>
+            </div>
           </div>
         </div>
       </section>
@@ -138,8 +150,8 @@
           </div>
           <div class="simple-list">
             <article class="simple-row">
-              <span>Research infrastructure</span>
-              <div><h3>Zhishi · Student Research Platform</h3><p>Core team member of an early-stage platform at the RUC School of Information supporting student academic exchange and research exploration.</p></div>
+              <span>Student collaboration</span>
+              <div><h3><a href="https://okcheese.com" target="_blank" rel="noopener noreferrer">CheeseX <span aria-hidden="true">↗</span></a></h3><p>An AI-driven platform for university project collaboration, recognized with first prize in the final round of the 17th JD Cup Student Innovation and Entrepreneurship Competition.</p></div>
             </article>
             <article class="simple-row">
               <span>Academic outreach</span>
@@ -170,7 +182,7 @@
               <p class="life-description" id="life-description">I like trying all kinds of sports, from softball to running and swimming. Training and playing with friends keep me energized beyond research.</p>
               <div class="life-controls">
                 <button type="button" id="life-prev" aria-label="Previous life photo" title="Previous photo">&#8592;</button>
-                <span id="life-count">01 / 05</span>
+                <span id="life-count">01 / 07</span>
                 <button type="button" id="life-next" aria-label="Next life photo" title="Next photo">&#8594;</button>
               </div>
             </div>
