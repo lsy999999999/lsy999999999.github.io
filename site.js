@@ -1,3 +1,18 @@
+// Branch-based Pages publishing serves the source HTML without the build step.
+// Refresh the original PDF URL there as well; built content-versioned URLs stay stable.
+(() => {
+  const cvLink = document.querySelector('.cv-reserved');
+  if (!cvLink) return;
+  const cvUrl = new URL(cvLink.href);
+  if (!cvUrl.pathname.endsWith('/Shiyu_Liu_Academic_CV_v5.pdf')) return;
+  function refreshCVLink() {
+    cvUrl.searchParams.set('v', String(Date.now()));
+    cvLink.href = cvUrl.href;
+  }
+  refreshCVLink();
+  cvLink.addEventListener('click', refreshCVLink);
+})();
+
 (() => {
   const photo = document.getElementById('life-photo');
   const backOne = document.getElementById('life-back-one');
